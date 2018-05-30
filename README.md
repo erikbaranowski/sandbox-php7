@@ -1,10 +1,14 @@
 # TestRepo
-Test
 
+Install
 	install VirtualBox 5.2 https://www.virtualbox.org/
 	install Vagrant 2.1.1 https://www.vagrantup.com/
 	run cmd as admin
 	cd to directory with this repo
-	vagrant plugin install vagrant-vbguest
 	vagrant up
 	
+ssh
+	connect to 192.168.56.2 port 22 as vagrant/vagrant
+
+Test page (works in firefox)
+	http://192.168.56.2/info.php
