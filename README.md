@@ -7,9 +7,10 @@ Install
 	run cmd as admin
 	cd to directory with this repo
 	vagrant up
-	
+
 ssh
 
+	install putty https://www.putty.org/
 	connect to 192.168.56.2 port 22 as vagrant/vagrant
 
 Test page (works in firefox)
