@@ -10,4 +10,3 @@ Vagrant.configure("2") do |config|
   
   config.vm.provision "shell", path: "box-init/init.sh"
 end
-
