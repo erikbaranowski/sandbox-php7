@@ -7,3 +7,4 @@ yum -y install yum-utils
 yum update
 yum-config-manager --enable remi-php72
 yum -y install php php-opcache
+yum -y install php-xml
