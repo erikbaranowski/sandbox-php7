@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 
-find /sandbox/box-init/scripts/before -name '*.sh' |
-while read filename
+for filename in /sandbox/box-init/scripts/before/*.sh
 do
     sh $filename
 done
 
 cp -R /sandbox/box-init/files/* /
 
-find /sandbox/box-init/scripts/after -name '*.sh' |
-while read filename
+for filename in /sandbox/box-init/scripts/after/*.sh
 do
     sh $filename
 done
