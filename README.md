@@ -17,7 +17,7 @@ ssh
 Initialize
 
 	cd /sandbox
-	composer install to install php 3rd party packages
+	composer install - installs php 3rd party packages
 	
 Test page (works in firefox)
 
