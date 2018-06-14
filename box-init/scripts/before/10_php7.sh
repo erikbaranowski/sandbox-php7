@@ -8,3 +8,4 @@ yum update
 yum-config-manager --enable remi-php72
 yum -y install php php-opcache
 yum -y install php-xml
+yum -y install php-pecl-xdebug

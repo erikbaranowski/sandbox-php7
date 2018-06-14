@@ -11,4 +11,3 @@ for filename in /sandbox/box-init/scripts/after/*.sh
 do
     sh $filename
 done
-
