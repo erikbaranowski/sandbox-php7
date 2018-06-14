@@ -26,7 +26,7 @@ Test Page
 Development/Debug
 
 	XDebug has already been configured with remote_autostart enabled in the vm
-	download Visual Studio Code https://code.visualstudio.com/
+	install Visual Studio Code https://code.visualstudio.com/
 	install Visual Studio Code PHP plugins including PHP Debug
 	
 	Update the launch.json file with pathMappings. "${workspaceRoot}/TestRepo" might need to be set differently depending on the relative path of your workspace to the Visual Studio Code workspace
