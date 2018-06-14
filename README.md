@@ -17,11 +17,11 @@ ssh
 Initialize
 
 	cd /sandbox
-	composer install to install php 3rd party packages
+	composer install (installs php 3rd party packages)
 	
-Test page (verified working in chrome/firefox)
+Test Page
 
-	http://192.168.56.2/info.php
+	http://192.168.56.2/info.php (verified working in chrome/firefox)
 
 Development/Debug
 
