@@ -2,8 +2,8 @@
 
 Install
 
-	install VirtualBox 5.2 https://www.virtualbox.org/
-	install Vagrant 2.1.1 https://www.vagrantup.com/
+	install VirtualBox 5.2.30 https://www.virtualbox.org/
+	install Vagrant 2.2.4 https://www.vagrantup.com/
 	on Windows 7 SP1 ONLY you will have to update PowerShell to version 3 or above for Vagrant https://docs.microsoft.com/en-us/powershell/scripting/setup/installing-windows-powershell?view=powershell-6
 	run cmd as admin
 	cd to directory with this repo
