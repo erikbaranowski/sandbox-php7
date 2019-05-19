@@ -25,7 +25,8 @@ Initialize php packages
 	
 Test Page
 
-	http://192.168.56.2/info.php (verified working in chrome/firefox)
+	http://192.168.56.2/test (verified working in chrome/firefox)
+	http://192.168.56.2/info (verified working in chrome/firefox)
 
 Development/Debug
 
