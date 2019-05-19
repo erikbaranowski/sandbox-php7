@@ -2,7 +2,7 @@
 
 About
 
-	This repository holds the configuration and instructions for hosting a php7 development sandbox.
+	This repository holds the configuration and instructions for hosting a php7 development sandbox. Currently running php 7.3 on Centos 7.6
 
 Install
 
@@ -33,14 +33,14 @@ Development/Debug
 	install Visual Studio Code https://code.visualstudio.com/
 	install Visual Studio Code PHP plugins including PHP Debug
 	
-	Update the launch.json file with pathMappings. "${workspaceRoot}/TestRepo" might need to be set differently depending on the relative path of your workspace to the Visual Studio Code workspace
+	Update the launch.json file with pathMappings. "${workspaceRoot}/sandbox-php7" might need to be set differently depending on the relative path of your workspace to the Visual Studio Code workspace
 		{
 			"name": "Listen for XDebug",
 			"type": "php",
 			"request": "launch",
 			"port": 9000,
 			"pathMappings": {
-				"/sandbox": "${workspaceRoot}/TestRepo"
+				"/sandbox": "${workspaceRoot}/sandbox-php7"
 			}
 		},
 
