@@ -18,10 +18,10 @@ ssh
 	install putty https://www.putty.org/
 	connect to 192.168.56.2 port 22 as vagrant/vagrant
 
-Initialize
+Initialize php packages
 
-	cd /sandbox
-	composer install (installs php 3rd party packages)
+	ssh into vm (see above section)
+	composer install (from default directory /sandbox)
 	
 Test Page
 
