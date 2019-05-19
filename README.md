@@ -2,7 +2,9 @@
 
 About
 
-	This repository holds the configuration and instructions for hosting a php7 development sandbox. Currently running php 7.3 on Centos 7.6
+	This repository holds the configuration and instructions for hosting a php7 development sandbox.
+	
+	Currently running PHP 7.3 on CentOS 7.6
 
 Install
 
