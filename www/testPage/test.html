@@ -1,8 +1,44 @@
+<!DOCTYPE html>
+
 <html>
     <head>
-        <title>PHP Test</title>
+        <title>PHP Test Page</title>
     </head>
     <body>
-        <p><?php echo $displayString;?></p> 
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+                 
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+                    
+            tr:nth-child(even) {
+                background-color:DodgerBlue;
+            }
+            tr:nth-child(odd) {
+                background-color:LightGray;
+            }
+        </style>
+        <h2>Test Results</h2>
+        <table style="width:100%">
+            <tr>
+                <th>Test Number</th>
+                <th>Results</th>
+            </tr> 
+            <tr>
+                <td>1</td>
+                <td><?php echo $displayString1;?></td>
+            </tr> 
+            <tr>
+                <td>2</td>
+                <td><?php echo $displayString2;?></td>
+            </tr>
+        </table>
     </body>
 </html>
