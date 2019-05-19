@@ -1,4 +1,8 @@
-# TestRepo
+# sandbox-php7
+
+About
+
+	This repository holds the configuration and instructions for hosting a php7 development sandbox.
 
 Install
 
