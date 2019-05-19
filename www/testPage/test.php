@@ -1,15 +1,24 @@
 <?php
 
 require __DIR__ . "/../../vendor/autoload.php";
-use Aws\S3\S3Client;
+use GuzzleHttp\Client;
 
-// Initialize an instance of a library class to prove that composer is working as well as the autoload.
-$s3Client = new S3Client([
-    'version' => 'latest',
-    'region'  => 'us-east-1'
+// Initialize guzzle Client
+$client = new Client([
+    'timeout'  => 2.0,
 ]);
 
-$testVar = "PHP running!";
+// Ping google and check response
+$displayString = "FAILED using Guzzle to ping google!";
+try {
+    $response = $client->request('GET', 'www.google.com/test');
+    if ($response->getStatusCode() == 200) {
+        $displayString = "SUCCESS using Guzzle to ping google!";
+    }
+}
+catch (Exception $e) {
+    $displayString = "PHP Exception caught using Guzzle to ping google! " . $e->getMessage();
+}
 
 include "test.html";
 
