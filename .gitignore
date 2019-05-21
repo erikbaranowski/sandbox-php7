@@ -1,3 +1,5 @@
 
 .vagrant/
 vendor/
+docs/
+.phpunit.result.cache

@@ -27,12 +27,24 @@ Initialize php packages
 	
 Test Page
 
-	http://192.168.56.2/test (verified working in chrome/firefox)
-	http://192.168.56.2/info (verified working in chrome/firefox)
+	http://192.168.56.2/test
+		verified working in chrome/firefox
+
+	http://192.168.56.2/info
+		verified working in chrome/firefox
+
+Unit Tests
+
+	phpunit
+		there is an alias in the .bash_profile so that you can run phpunit from any directory
+
+	phpunit-coverage 
+		there is an alias in the .bash_profile so that you can run phpunit from any directory
+		See /sandbox/docs/index.html for results
 
 Development/Debug
 
-	XDebug has already been configured with remote_autostart enabled in the vm
+	XDebug has already been configured with remote_autostart enabled in the vm (/etc/php.d/xdebug.ini)
 	install Visual Studio Code https://code.visualstudio.com/
 	install Visual Studio Code PHP plugins including PHP Debug
 	

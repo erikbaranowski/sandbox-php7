@@ -10,7 +10,7 @@ class GuzzleHelper {
     protected $guzzleClient;
 
     /**
-     * Constructor, initialize properties.
+     * Constructor - initialize properties.
      *
      * @param options array of GuzzleHttp\Client options
      * 
@@ -40,7 +40,7 @@ class GuzzleHelper {
      */ 
     public function makeGetRequest($url) {
         // Ping the url with a GET request and check the response
-        $responseDescription = "FAILED using Guzzle to call {$url}!";
+        $responseDescription = "";
         try {
             $response = $this->guzzleClient->request("GET", $url);
             if ($response->getStatusCode() == 200) {
