@@ -22,8 +22,8 @@ ssh
 
 Initialize php packages
 
-	ssh into the vm (see above section)
-	composer install (from default directory /sandbox)
+	composer install 
+		run from default directory /sandbox
 	
 Test Page
 
