@@ -49,7 +49,7 @@ XDebug has already been configured with remote_autostart enabled in the vm (/etc
 1. install [Visual Studio Code](https://code.visualstudio.com/)
 2. install Visual Studio Code PHP plugins including PHP Debug
 3. Update the launch.json file with pathMappings. "${workspaceRoot}/sandbox-php7" might need to be set differently depending on the relative path of your workspace to the Visual Studio Code workspace
-```json
+```JSON
 {
 	"name": "Listen for XDebug",
 	"type": "php",
