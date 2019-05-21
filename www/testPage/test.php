@@ -1,39 +1,16 @@
 <?php
 
 require __DIR__ . "/../../vendor/autoload.php";
-use GuzzleHttp\Client;
+use src\Guzzle\GuzzleHelper;
 
-$displayString1 = testURL("www.google.com");
-$displayString2 = testURL("www.google.com/failTest");
+$guzzleHelper = new GuzzleHelper();
+
+$response = $guzzleHelper->makeGetRequest("www.google.com");
+$displayString1 = $response["responseDescription"];
+
+$response = $guzzleHelper->makeGetRequest("www.google.com/failTest");
+$displayString2 = $response["responseDescription"];
+
 include "test.html";
-
-/**
- * Makes a GET request to the specified url.
- *
- * @param string  $url  The url to make a GET request to
- * 
- * @throws none
- * @return resultString
- */ 
-function testURL($url) {
-    // Initialize guzzle Client
-    $client = new Client([
-        'timeout'  => 2.0,
-    ]);
-
-    // Ping the url with a GET request and check the response
-    $resultString = "FAILED using Guzzle to ping {$url}!";
-    try {
-        $response = $client->request("GET", $url);
-        if ($response->getStatusCode() == 200) {
-            $resultString = "SUCCESS using Guzzle to ping {$url}!";
-        }
-    }
-    catch (Exception $e) {
-        $resultString = "PHP Exception caught using Guzzle to ping {$url}! " . $e->getMessage();
-    }
-
-    return $resultString;
-}
 
 ?>
