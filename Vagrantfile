@@ -9,4 +9,5 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder ".", "/sandbox"
   
   config.vm.provision "shell", path: "box-init/init.sh"
+  config.vm.provision "shell", path: "box-init/welcome.sh"
 end
