@@ -20,11 +20,6 @@ Currently running PHP 7.3 on CentOS 7.6
 1. install [putty](https://www.putty.org/)
 2. connect to 192.168.56.2 port 22 as vagrant/vagrant
 
-## Initialize php packages
-
-`composer install`
-- run from default directory /sandbox
-
 ## Test Page
 
 http://192.168.56.2/test
@@ -48,7 +43,7 @@ XDebug has already been configured with remote_autostart enabled in the vm (/etc
 
 1. install [Visual Studio Code](https://code.visualstudio.com/)
 2. install Visual Studio Code PHP plugins including PHP Debug
-3. Update the launch.json file with pathMappings. "${workspaceRoot}/sandbox-php7" might need to be set differently depending on the relative path of your workspace to the Visual Studio Code workspace
+3. Update the launch.json file in the workspace to include the following. "${workspaceRoot}/sandbox-php7" might need to be set differently depending on the relative path of your sandbox workspace to the Visual Studio Code workspace.
 ```JSON
 {
 	"name": "Listen for XDebug",
@@ -62,3 +57,8 @@ XDebug has already been configured with remote_autostart enabled in the vm (/etc
 ```
 4. Set the debugger to Listen for XDebug
 5. Set a breakpoint and go!
+
+## Dependency Management
+
+`composer install --optimize-autoloader`
+- run [composer](https://getcomposer.org/) commands from /sandbox
