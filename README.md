@@ -62,3 +62,4 @@ XDebug has already been configured with remote_autostart enabled in the vm (/etc
 
 `composer install --optimize-autoloader`
 - run [composer](https://getcomposer.org/) commands from /sandbox
+
